@@ -18,13 +18,13 @@ for year in range(2008,2024):
             if "\"error\": \"Not found\"" not in data:
 
                 index = data.find("USD")
-                print(index)
+                
                 true_index_begin = data.find("Value", index)
-                print(true_index_begin)
+                
                 true_index_end = data.find(",", true_index_begin)
 
                 result=""
-                for i in range(true_index_begin+6, true_index_end):
+                for i in range(true_index_begin+8, true_index_end):
                     result = result + data[i] 
                 print("USD value is " + result)
                 result_data.append([str(day).zfill(2)+'.' +
