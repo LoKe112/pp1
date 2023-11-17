@@ -1,10 +1,10 @@
-
 import os
 import csv
 import time
-from typing import List
 
 import requests
+
+from typing import List
 from bs4 import BeautifulSoup
 
 
